@@ -1,0 +1,28 @@
+.eye {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-left: 50%;
+  margin-top: 40%;
+  /* This will make the eye follow the mouse cursor */
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.eye::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+/* This will make the eye follow the mouse cursor when it is hovered over */
+.eye:hover {
+  transform: translate(-50%, -50%) rotate(atan2(event.clientX - (this.offsetLeft + 25), event.clientY - (this.offsetTop + 25)) * (180 / Math.PI) - 90deg);
+}

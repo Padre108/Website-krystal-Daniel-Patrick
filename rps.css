@@ -1,0 +1,64 @@
+body{
+  height: 100%;
+    margin: 0;
+    background-image: url(c9522bd1d2092717164ec51566083751.gif);
+    background-size: cover;
+    
+}
+.choiceBtn{
+  font-weight: 700;
+  line-height: 30px;
+  width: 150px;
+  color:  white;
+  background-color: rgb(126, 68, 113);
+  border-color: pink;
+  border: 5px solid rgb(71, 1, 71);  
+  border-radius: 2.5px;
+  transition: .3s;
+}
+.choiceBtn:hover{
+  transform: translateY(-5px);
+  background-color: rgb(71, 1, 71);
+  cursor: pointer;
+}
+#gameDiv{
+  width: 50%;
+  margin-top: 15%;
+  margin-left: 25%;
+  font-family: 'Brush Script MT', cursive;
+  border: 3px solid;
+  border-radius: 25px;
+  padding: 10px;
+  background-image: url(AchingAfraidIndigobunting-size_restricted.gif);
+  background-size: cover;
+  background-color: lightgrey;
+  text-align: center;
+}
+#playerText{
+  background-image:linear-gradient(rgb(90, 15, 86),rgb(54, 13, 51));
+    -webkit-background-clip:  text;
+    color: transparent;
+}
+#computerText{
+  background-image:linear-gradient(rgb(90, 15, 86),rgb(54, 13, 51));
+  -webkit-background-clip:  text;
+  color: transparent;
+}
+.BACK{
+  margin-top: 20px;
+  margin-left: 48.7%;
+  font-weight: 400;
+  line-height: 20px;
+  width: 60px;
+  color:  black;
+  background-color: pink;
+  border-color: pink;
+  border: 3px solid rgb(126, 68, 113);  
+  border-radius: 1.5px;
+  transition: .3s;
+}
+.BACK:hover{
+  color: white;
+  background-color: rgb(126, 68, 113);
+  cursor: pointer;
+}
